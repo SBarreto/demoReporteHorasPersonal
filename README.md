@@ -5,9 +5,9 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 # Notas importantes
 --La aplicacion utiliza una plantilla de tarjetas de angular material para hacer el desarrollo mas rapido, asi se muestra la informacion de las tablas
 
--- la conexion a mongoDB esta instanciada de manera loca, por lo que se debe cambiar
+-- la conexion a mongoDB esta instanciada de manera local, por lo que se debe cambiar
 
--- El ultimo puntono esta desarrollado del todo, trae los JSON del api pero no los muestra.
+-- El ultimo punto no esta desarrollado del todo, trae los JSON del api pero no los muestra.
 
 ## Development server
 
