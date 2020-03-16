@@ -1,0 +1,20 @@
+
+<h1>Reportes de horas</h1>
+<mat-accordion multi=true *ngIf="reportes.length > 0">
+  <mat-expansion-panel *ngFor="let reporte of reportes">
+    <mat-expansion-panel-header>
+      {{reporte.documento}}
+    </mat-expansion-panel-header>
+    <p>{{reporte.nombre}}</p>
+    <p>{{reporte.apellido}}</p>
+    <p>{{reporte.fechaInicio}}</p>
+    <p>{{reporte.fechaFin}}</p>
+    <p>{{reporte.horarioInicioTurno}}</p>
+    <p>{{reporte.horarioFinTurno}}</p>
+    <p>{{reporte.horarioInicioHorasExtra}}</p>
+    <p>{{reporte.horarioFinHorasExtra}}</p>
+    <p>{{reporte.motivoHorasExtra}}</p>
+
+  </mat-expansion-panel>
+</mat-accordion>
+<p *ngIf="reportes.length <= 0"> No hay reportes</p>

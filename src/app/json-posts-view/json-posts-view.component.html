@@ -1,0 +1,13 @@
+
+<h1>Posts Json</h1>
+<mat-accordion multi=true *ngIf="posts.length > 0">
+  <mat-expansion-panel *ngFor="let post of posts">
+    <mat-expansion-panel-header>
+      {{post.userId}}
+    </mat-expansion-panel-header>
+    <p>{{post.id}}</p>
+    <p>{{post.title}}</p>
+    <p>{{post.body}}</p>
+  </mat-expansion-panel>
+</mat-accordion>
+<p *ngIf="posts.length <= 0"> No hay Posts</p>

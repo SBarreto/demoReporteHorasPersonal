@@ -1,0 +1,46 @@
+<h1>Formulario de horas extra</h1>
+<mat-card>
+<form class="formulariohoras" (submit)="crearReporteHorasExtra(createForm)" #createForm="ngForm">
+  <mat-form-field>
+    <mat-label>Documento</mat-label>
+    <input type="number" name="documento" required matInput placeHolder="documento" [(ngModel)]="reporteHorasExtra.documento" #documento="ngModel">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Nombre</mat-label>
+    <input type="text" name="nombre" required matInput placeHolder="nombre" [(ngModel)]="reporteHorasExtra.nombre" #nombre="ngModel">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Apellido</mat-label>
+    <input type="text" name="apellido" required matInput placeHolder="apellido" [(ngModel)]="reporteHorasExtra.apellido" #apellido="ngModel">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Fecha inicio</mat-label>
+    <input type="date" name="fechaInicio" required matInput placeHolder="Fecha inicio" [(ngModel)]="reporteHorasExtra.fechaInicio" #fechaInicio="ngModel">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Fecha fin</mat-label>
+    <input type="date" name="fechaFin" required matInput placeHolder="Fecha fin" [(ngModel)]="reporteHorasExtra.fechaFin" #fechaFin="ngModel">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Horario inicio de turno</mat-label>
+    <input type="time" name="horarioInicioTurno" required matInput placeHolder="Horario inicio de turno" [(ngModel)]="reporteHorasExtra.horarioInicioTurno" #horarioInicioTurno="ngModel">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Horario fin de turno</mat-label>
+    <input type="time" name="horarioFinTurno" required matInput placeHolder="Horario fin de turno" [(ngModel)]="reporteHorasExtra.horarioFinTurno" #horarioFinTurno="ngModel">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Horario inicio horas extra</mat-label>
+    <input type="time" name="horarioInicioHorasExtra" required matInput placeHolder="Horario inicio horas extra" [(ngModel)]="reporteHorasExtra.horarioInicioHorasExtra" #horarioInicioHorasExtra="ngModel">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Horario fin horas extra</mat-label>
+    <input type="time" name="horarioFinHorasExtra" required matInput placeHolder="Horario fin horas extra" [(ngModel)]="reporteHorasExtra.horarioFinHorasExtra" #horarioFinHorasExtra="ngModel">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Motivo horas extra</mat-label>
+    <input type="time" name="motivoHorasExtra" required matInput placeHolder="Motivo horas extra" [(ngModel)]="reporteHorasExtra.motivoHorasExtra" #motivoHorasExtra="ngModel">
+  </mat-form-field>
+  <button color="primary" required mat-raised-button type="submit">Guardar reporte de horas</button>
+</form>
+</mat-card>
